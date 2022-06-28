@@ -3,7 +3,10 @@ import Button from '../../ComponentsLibrary/Buttons/Button'
 
 const ButtonPage = () => {
   return (
-    <Button></Button>
+    <div className='flex column' style={{gridGap:"10px"}}>
+        <Button></Button>
+        <Button ghost></Button>
+    </div>
   )
 }
 

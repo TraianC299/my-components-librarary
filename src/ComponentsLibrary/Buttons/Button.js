@@ -14,10 +14,21 @@ font-weight:600;
 box-shadow: 0px 1px 8px rgba(46, 46, 46, 0.04);
 border-radius: 5px;
 font-size: 1rem;
-border:none;`
-const Button = ({color=BLUE, }) => {
+border:none;
+cursor:pointer;
+background-color: ${props => props.color};`
+
+
+const ghostButton = {
+    backgroundColor: "transparent",
+    border: "1px solid" + BLUE,
+    color: BLUE,
+}
+const Button = ({children,color=BLUE, ghost, ...props}) => {
+
+
   return (
-    <ButtonStyle style={{backgroundColor:color}}>Button</ButtonStyle>
+    <ButtonStyle {...props} color={color} style={ghost&&ghostButton}>{children}</ButtonStyle>
   )
 }
 

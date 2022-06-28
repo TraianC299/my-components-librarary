@@ -49,6 +49,8 @@ const activeStyle = {
 const Menu = () => {
     const [inputOpen, setInputOpen] = useState(false)
     const [openButtons, setOpenButtons] = useState(false)
+    const [openFeedback, setOpenFeedback] = useState(false)
+    const [openUtilities, setOpenUtilities] = useState(false)
   return (
     <Container>
         <Category onClick={()=>setInputOpen(previous=>!previous)}>Inputs</Category>
@@ -68,6 +70,18 @@ const Menu = () => {
         <Collapse on={openButtons}>
             <CollapsableContainer>
             <ComponentLink to="/buttons/button">Button</ComponentLink>
+            </CollapsableContainer>
+        </Collapse>
+        <Category onClick={()=>setOpenUtilities(previous=>!previous)}>Utilities</Category>
+        <Collapse on={openUtilities}>
+            <CollapsableContainer>
+            <ComponentLink to="/utilities/collapse">Collapse</ComponentLink>
+            </CollapsableContainer>
+        </Collapse>
+        <Category onClick={()=>setOpenFeedback(previous=>!previous)}>Feedback</Category>
+        <Collapse on={openFeedback}>
+            <CollapsableContainer>
+            <ComponentLink to="/feedback/snackbar">Snackbar</ComponentLink>
             </CollapsableContainer>
         </Collapse>
     </Container>

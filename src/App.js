@@ -8,7 +8,8 @@ import TimePickerInput from './ComponentsLibrary/Input/TimePickerInput';
 import DatePickerInput from './ComponentsLibrary/Input/DatePickerInput';
 import RadioButtons from './ComponentsLibrary/Input/RadioButtons';
 import Checkbox from './ComponentsLibrary/Input/Checkbox';
-import Button from './ComponentsLibrary/Buttons/Button';
+import ButtonPage from './Pages/Buttons/ButtonPage';
+import SnackbarPage from './Pages/Feedback/SnackbarPage';
 
 
 
@@ -26,7 +27,10 @@ function App() {
           <Route path="checkbox" element={<Checkbox></Checkbox>} />
         </Route>
         <Route path="buttons">
-          <Route path="button" element={<Button></Button>}></Route>
+          <Route path="button" element={<ButtonPage></ButtonPage>}></Route>
+        </Route>
+        <Route path="feedback">
+          <Route path="snackbar" element={<SnackbarPage></SnackbarPage>}></Route>
         </Route>
       </Route>
     </Routes>
