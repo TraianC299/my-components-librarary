@@ -59,6 +59,7 @@ const Menu = () => {
                 <ComponentLink to="/input/time-picker">Time Picker</ComponentLink>
                 <ComponentLink to="/input/date-picker">Date Picker</ComponentLink>
                 <ComponentLink to="/input/radio-buttons">Radio Buttons</ComponentLink>
+                <ComponentLink to="/input/check">Check</ComponentLink>
             </CollapsableContainer>
         </Collapse>
         <Category onClick={()=>setInputOpen(true)}>Input</Category>
