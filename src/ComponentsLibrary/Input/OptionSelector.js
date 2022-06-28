@@ -4,7 +4,6 @@ import {  LIGHTGREY } from '../../Constants'
 import CircleButton from '../Buttons/CircleButton'
 import OutsideClick from '../Utilities/OutsideClick'
 import Input from "./Input"
-
 const Container = styled.div`
 max-width: 100%;
 display: flex;

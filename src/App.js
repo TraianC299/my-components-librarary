@@ -5,6 +5,7 @@ import { CenetredDiv } from './GlobalStyles';
 import OptionSelector from './ComponentsLibrary/Input/OptionSelector';
 import Input from './ComponentsLibrary/Input/Input';
 import TimePickerInput from './ComponentsLibrary/Input/TimePickerInput';
+import DatePickerInput from './ComponentsLibrary/Input/DatePickerInput';
 
 
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="option-selector" element={<OptionSelector label={"Option Selector"}></OptionSelector>} />
           <Route path="input" element={<Input label={"Input"}></Input>} />
           <Route path="time-picker" element={<TimePickerInput></TimePickerInput>} />
+          <Route path="date-picker" element={<DatePickerInput></DatePickerInput>} />
         </Route>
       </Route>
     </Routes>
