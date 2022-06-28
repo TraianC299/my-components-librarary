@@ -1,25 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import Menu from './Components/Main/Menu';
+import { Outlet, Route, Routes } from 'react-router-dom';
+import { CenetredDiv } from './GlobalStyles';
+import OptionSelector from './ComponentsLibrary/Input/OptionSelector';
+import Input from './ComponentsLibrary/Input/Input';
+import TimePickerInput from './ComponentsLibrary/Input/TimePickerInput';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="" element={<ComponentsApp/>}>
+        <Route path="input">
+          <Route path="option-selector" element={<OptionSelector label={"Option Selector"}></OptionSelector>} />
+          <Route path="input" element={<Input label={"Input"}></Input>} />
+          <Route path="time-picker" element={<TimePickerInput></TimePickerInput>} />
+        </Route>
+      </Route>
+    </Routes>
   );
 }
 
 export default App;
+
+
+const ComponentsApp = () => {
+  return(
+    <div style={{display:"flex", height:"100vh"}}>
+    <Menu></Menu>
+    <CenetredDiv>
+      <Outlet></Outlet>
+    </CenetredDiv>
+    </div>
+  )
+}
+
+
+
