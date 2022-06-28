@@ -6,6 +6,7 @@ import OptionSelector from './ComponentsLibrary/Input/OptionSelector';
 import Input from './ComponentsLibrary/Input/Input';
 import TimePickerInput from './ComponentsLibrary/Input/TimePickerInput';
 import DatePickerInput from './ComponentsLibrary/Input/DatePickerInput';
+import RadioButtons from './ComponentsLibrary/Input/RadioButtons';
 
 
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="input" element={<Input label={"Input"}></Input>} />
           <Route path="time-picker" element={<TimePickerInput></TimePickerInput>} />
           <Route path="date-picker" element={<DatePickerInput></DatePickerInput>} />
+          <Route path="radio-buttons" element={<RadioButtons></RadioButtons>} />
         </Route>
       </Route>
     </Routes>
