@@ -7,7 +7,8 @@ import Input from './ComponentsLibrary/Input/Input';
 import TimePickerInput from './ComponentsLibrary/Input/TimePickerInput';
 import DatePickerInput from './ComponentsLibrary/Input/DatePickerInput';
 import RadioButtons from './ComponentsLibrary/Input/RadioButtons';
-import Check from './ComponentsLibrary/Input/Check';
+import Checkbox from './ComponentsLibrary/Input/Checkbox';
+import Button from './ComponentsLibrary/Buttons/Button';
 
 
 
@@ -22,7 +23,10 @@ function App() {
           <Route path="time-picker" element={<TimePickerInput></TimePickerInput>} />
           <Route path="date-picker" element={<DatePickerInput></DatePickerInput>} />
           <Route path="radio-buttons" element={<RadioButtons></RadioButtons>} />
-          <Route path="check" element={<Check></Check>} />
+          <Route path="checkbox" element={<Checkbox></Checkbox>} />
+        </Route>
+        <Route path="buttons">
+          <Route path="button" element={<Button></Button>}></Route>
         </Route>
       </Route>
     </Routes>

@@ -20,6 +20,7 @@ const Category = styled.div`
     font-size: 1.25rem;
     font-weight: 500;
     color: white;
+    margin-top:20px;
     `
 
 const CollapsableContainer = styled.div`
@@ -47,6 +48,7 @@ const activeStyle = {
 }
 const Menu = () => {
     const [inputOpen, setInputOpen] = useState(false)
+    const [openButtons, setOpenButtons] = useState(false)
   return (
     <Container>
         <Category onClick={()=>setInputOpen(previous=>!previous)}>Inputs</Category>
@@ -59,11 +61,15 @@ const Menu = () => {
                 <ComponentLink to="/input/time-picker">Time Picker</ComponentLink>
                 <ComponentLink to="/input/date-picker">Date Picker</ComponentLink>
                 <ComponentLink to="/input/radio-buttons">Radio Buttons</ComponentLink>
-                <ComponentLink to="/input/check">Check</ComponentLink>
+                <ComponentLink to="/input/checkbox">Checkbox</ComponentLink>
             </CollapsableContainer>
         </Collapse>
-        <Category onClick={()=>setInputOpen(true)}>Input</Category>
-       
+        <Category onClick={()=>setOpenButtons(previous=>!previous)}>Buttons</Category>
+        <Collapse on={openButtons}>
+            <CollapsableContainer>
+            <ComponentLink to="/buttons/button">Button</ComponentLink>
+            </CollapsableContainer>
+        </Collapse>
     </Container>
   )
 }
