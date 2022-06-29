@@ -10,6 +10,7 @@ import RadioButtons from './ComponentsLibrary/Input/RadioButtons';
 import Checkbox from './ComponentsLibrary/Input/Checkbox';
 import ButtonPage from './Pages/Buttons/ButtonPage';
 import SnackbarPage from './Pages/Feedback/SnackbarPage';
+import CollapsePage from './Pages/Utilities/CollapsePage';
 
 
 
@@ -28,6 +29,9 @@ function App() {
         </Route>
         <Route path="buttons">
           <Route path="button" element={<ButtonPage></ButtonPage>}></Route>
+        </Route>
+        <Route path="utilities">
+          <Route path="collapse" element={<CollapsePage></CollapsePage>}></Route>
         </Route>
         <Route path="feedback">
           <Route path="snackbar" element={<SnackbarPage></SnackbarPage>}></Route>

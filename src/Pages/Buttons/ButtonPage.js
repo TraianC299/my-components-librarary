@@ -4,8 +4,8 @@ import Button from '../../ComponentsLibrary/Buttons/Button'
 const ButtonPage = () => {
   return (
     <div className='flex column' style={{gridGap:"10px"}}>
-        <Button></Button>
-        <Button ghost></Button>
+        <Button>Full Button</Button>
+        <Button ghost>Ghost Button</Button>
     </div>
   )
 }
