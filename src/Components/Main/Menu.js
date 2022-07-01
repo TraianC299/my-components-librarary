@@ -52,6 +52,7 @@ const Menu = () => {
     const [openButtons, setOpenButtons] = useState(false)
     const [openFeedback, setOpenFeedback] = useState(false)
     const [openUtilities, setOpenUtilities] = useState(false)
+    const [openNavigation, setOpenNavigation] = useState(false)
   return (
     <Container>
         <Category onClick={()=>setInputOpen(previous=>!previous)}>Inputs</Category>
@@ -83,6 +84,14 @@ const Menu = () => {
         <Collapse on={openFeedback}>
             <CollapsableContainer>
             <ComponentLink to="/feedback/snackbar">Snackbar</ComponentLink>
+            </CollapsableContainer>
+        </Collapse>
+        <Category onClick={()=>setOpenNavigation(previous=>!previous)}>Navigation</Category>
+        <Collapse on={openNavigation}>
+            <CollapsableContainer>
+            <ComponentLink to="/navigation/slider-header">Slider Options</ComponentLink>
+            <ComponentLink to="/navigation/stepper">Stepper</ComponentLink>
+            <ComponentLink to="/navigation/modal">Modal</ComponentLink>
             </CollapsableContainer>
         </Collapse>
     </Container>

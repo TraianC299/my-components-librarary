@@ -11,6 +11,9 @@ import Checkbox from './ComponentsLibrary/Input/Checkbox';
 import ButtonPage from './Pages/Buttons/ButtonPage';
 import SnackbarPage from './Pages/Feedback/SnackbarPage';
 import CollapsePage from './Pages/Utilities/CollapsePage';
+import SliderHeaderPage from './Pages/Navigation/SliderHeaderPage';
+import StepperPage from './Pages/Navigation/StepperPage';
+import ModalPage from './Pages/Navigation/ModalPage';
 
 
 
@@ -35,6 +38,11 @@ function App() {
         </Route>
         <Route path="feedback">
           <Route path="snackbar" element={<SnackbarPage></SnackbarPage>}></Route>
+        </Route>
+        <Route path="navigation">
+          <Route path="slider-header" element={<SliderHeaderPage></SliderHeaderPage>}></Route>
+          <Route path="stepper" element={<StepperPage></StepperPage>}></Route>
+          <Route path="modal" element={<ModalPage></ModalPage>}></Route>
         </Route>
       </Route>
     </Routes>
