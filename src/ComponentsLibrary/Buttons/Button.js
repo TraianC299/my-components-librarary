@@ -24,11 +24,19 @@ const ghostButton = {
     border: "1px solid" + BLUE,
     color: BLUE,
 }
-const Button = ({children,color=BLUE, ghost, ...props}) => {
+
+const textButton = {
+    border:"none",
+    backgroundColor: "transparent",
+    color: BLUE,
+    boxShadow:"none"
+
+}
+const Button = ({children,color=BLUE, ghost, text, ...props}) => {
 
 
   return (
-    <ButtonStyle {...props} color={color} style={ghost&&ghostButton}>{children}</ButtonStyle>
+    <ButtonStyle {...props} color={color} style={ghost&&ghostButton||text&&textButton}>{children}</ButtonStyle>
   )
 }
 

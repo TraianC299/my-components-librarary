@@ -14,6 +14,8 @@ import CollapsePage from './Pages/Utilities/CollapsePage';
 import SliderHeaderPage from './Pages/Navigation/SliderHeaderPage';
 import StepperPage from './Pages/Navigation/StepperPage';
 import ModalPage from './Pages/Navigation/ModalPage';
+import ImageTextPage from './Pages/Display/ImageTextPage';
+import PricePlansPage from './Pages/Ecommerce/PricePlansPage';
 
 
 
@@ -43,6 +45,12 @@ function App() {
           <Route path="slider-header" element={<SliderHeaderPage></SliderHeaderPage>}></Route>
           <Route path="stepper" element={<StepperPage></StepperPage>}></Route>
           <Route path="modal" element={<ModalPage></ModalPage>}></Route>
+        </Route>
+        <Route path="display">
+          <Route path="image-text" element={<ImageTextPage></ImageTextPage>}></Route>
+        </Route>
+        <Route path="e-commerce">
+          <Route path="price-plans" element={<PricePlansPage></PricePlansPage>}></Route>
         </Route>
       </Route>
     </Routes>

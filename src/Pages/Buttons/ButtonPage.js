@@ -6,6 +6,7 @@ const ButtonPage = () => {
     <div className='flex column' style={{gridGap:"10px"}}>
         <Button>Full Button</Button>
         <Button ghost>Ghost Button</Button>
+        <Button text>Text Button</Button>
     </div>
   )
 }
