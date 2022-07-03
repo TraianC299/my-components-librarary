@@ -16,6 +16,7 @@ import StepperPage from './Pages/Navigation/StepperPage';
 import ModalPage from './Pages/Navigation/ModalPage';
 import ImageTextPage from './Pages/Display/ImageTextPage';
 import PricePlansPage from './Pages/Ecommerce/PricePlansPage';
+import ImageSliderPage from './Pages/Display/ImageSliderPage';
 
 
 
@@ -48,6 +49,7 @@ function App() {
         </Route>
         <Route path="display">
           <Route path="image-text" element={<ImageTextPage></ImageTextPage>}></Route>
+          <Route path="image-slider" element={<ImageSliderPage></ImageSliderPage>}></Route>
         </Route>
         <Route path="e-commerce">
           <Route path="price-plans" element={<PricePlansPage></PricePlansPage>}></Route>
