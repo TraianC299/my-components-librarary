@@ -118,6 +118,7 @@ const Menu = () => {
             <CollapsableContainer>
             <ComponentLink to="/display/image-text">Image Text</ComponentLink>
             <ComponentLink to="/display/image-slider">Image Slider</ComponentLink>
+            <ComponentLink to="/display/hero-section">Hero Section</ComponentLink>
             </CollapsableContainer>
         </Collapse>
         <Category active={openEcommerce} onClick={()=>setOpenEcommerce(previous=>!previous)}>E-commerce</Category>

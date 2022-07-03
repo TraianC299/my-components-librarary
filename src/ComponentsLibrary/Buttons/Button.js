@@ -36,7 +36,7 @@ const Button = ({children,color=BLUE, ghost, text, ...props}) => {
 
 
   return (
-    <ButtonStyle {...props} color={color} style={ghost&&ghostButton||text&&textButton}>{children}</ButtonStyle>
+    <ButtonStyle style={ghost&&ghostButton||text&&textButton} {...props}>{children}</ButtonStyle>
   )
 }
 

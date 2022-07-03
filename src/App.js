@@ -17,6 +17,7 @@ import ModalPage from './Pages/Navigation/ModalPage';
 import ImageTextPage from './Pages/Display/ImageTextPage';
 import PricePlansPage from './Pages/Ecommerce/PricePlansPage';
 import ImageSliderPage from './Pages/Display/ImageSliderPage';
+import HeroSection from './ComponentsLibrary/Display/HeroSection';
 
 
 
@@ -50,6 +51,7 @@ function App() {
         <Route path="display">
           <Route path="image-text" element={<ImageTextPage></ImageTextPage>}></Route>
           <Route path="image-slider" element={<ImageSliderPage></ImageSliderPage>}></Route>
+          <Route path="hero-section" element={<HeroSection></HeroSection>}></Route>
         </Route>
         <Route path="e-commerce">
           <Route path="price-plans" element={<PricePlansPage></PricePlansPage>}></Route>
