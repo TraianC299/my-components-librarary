@@ -19,6 +19,7 @@ import PricePlansPage from './Pages/Ecommerce/PricePlansPage';
 import ImageSliderPage from './Pages/Display/ImageSliderPage';
 import HeroSection from './ComponentsLibrary/Display/HeroSection';
 import BottomMenu from './Pages/Navigation/BottomMenu.tsx';
+import Loading from './ComponentsLibrary/Utilities/Loading';
 
 
 
@@ -40,6 +41,7 @@ function App() {
         </Route>
         <Route path="utilities">
           <Route path="collapse" element={<CollapsePage></CollapsePage>}></Route>
+          <Route path="loading" element={<Loading></Loading>}></Route>
         </Route>
         <Route path="feedback">
           <Route path="snackbar" element={<SnackbarPage></SnackbarPage>}></Route>

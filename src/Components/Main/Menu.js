@@ -98,6 +98,7 @@ const Menu = () => {
         <Collapse on={openUtilities}>
             <CollapsableContainer>
             <ComponentLink to="/utilities/collapse">Collapse</ComponentLink>
+            <ComponentLink to="/utilities/loading">Loading</ComponentLink>
             </CollapsableContainer>
         </Collapse>
         <Category active={openFeedback} onClick={()=>setOpenFeedback(previous=>!previous)}>Feedback</Category>
