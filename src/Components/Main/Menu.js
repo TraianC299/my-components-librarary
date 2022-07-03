@@ -25,6 +25,7 @@ const CategoryStyle = styled.div`
     margin-top:20px;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
     >svg{
         transition: all 0.3s ease-in-out;
         height:10px;
@@ -111,6 +112,7 @@ const Menu = () => {
             <ComponentLink to="/navigation/slider-header">Slider Options</ComponentLink>
             <ComponentLink to="/navigation/stepper">Stepper</ComponentLink>
             <ComponentLink to="/navigation/modal">Modal</ComponentLink>
+            <ComponentLink to="/navigation/bottom-menu">Bottom Menu</ComponentLink>
             </CollapsableContainer>
         </Collapse>
         <Category active={openDisplay} onClick={()=>setOpenDisplay(previous=>!previous)}>Display</Category>

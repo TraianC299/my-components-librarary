@@ -18,6 +18,7 @@ import ImageTextPage from './Pages/Display/ImageTextPage';
 import PricePlansPage from './Pages/Ecommerce/PricePlansPage';
 import ImageSliderPage from './Pages/Display/ImageSliderPage';
 import HeroSection from './ComponentsLibrary/Display/HeroSection';
+import BottomMenu from './Pages/Navigation/BottomMenu.tsx';
 
 
 
@@ -47,6 +48,7 @@ function App() {
           <Route path="slider-header" element={<SliderHeaderPage></SliderHeaderPage>}></Route>
           <Route path="stepper" element={<StepperPage></StepperPage>}></Route>
           <Route path="modal" element={<ModalPage></ModalPage>}></Route>
+          <Route path="bottom-menu" element={<BottomMenu></BottomMenu>}></Route>
         </Route>
         <Route path="display">
           <Route path="image-text" element={<ImageTextPage></ImageTextPage>}></Route>

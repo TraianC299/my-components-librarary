@@ -47,7 +47,6 @@ width: 100%;`
 
 const Container = styled.div`
  display: flex;
- padding: 1rem;
  width: 100%;
  height: 140vw;
  margin: 0 auto;
@@ -55,17 +54,11 @@ const Container = styled.div`
  scroll-snap-type: x mandatory;
  transition: all 0.2s ease-in-out;
 
- >.child:first-child{
-     margin-left: 15vw;
- }
- >.child:last-child{
-     margin-right: 15vw;
- }
+
 
  @media ${device.laptopSmall}{
-    height: 720px;
+    height: 100%;
     position: relative;
-    margin: 2.5vh auto;
 
 }
 
@@ -78,18 +71,18 @@ const Container = styled.div`
 
 const Child = styled.div`
 position: relative;
- margin: 0 0.5rem;
+ margin: 0rem;
  border-radius: 10px;
 overflow: hidden;
  scroll-snap-align: center;
  flex: 0 0 80%;
  box-shadow: 2px 2px 10px rgba(19, 21, 19, 0.25);
  background-color: white;
- transition: all 0.2s ease-in-out;
+ transition: all 0.1s ease-in-out;
  >img{
  width: 100%;
  height: 100%;
- object-fit: cover
+ object-fit: cover;
 
  }
 
@@ -111,7 +104,6 @@ position: absolute;
 top: calc(50% - 50px);
 padding:20px;
 display: flex;
-grid-gap: 20px;
 z-index:1;
 width:100%;
 justify-content: space-between;
@@ -129,7 +121,7 @@ const ImageSlider = ({images=[]}) => {
             if(browserRef.current === 'safari'){
                 containerRef.current.scrollLeft = slide * containerRef.current.clientWidth*0.7
             }else{
-                document.getElementById(`slide ${slide}`).scrollIntoView({behavior: 'smooth', block:"nearest", inline: "nearest"})
+                document.getElementById(`slide ${slide}`).scrollIntoView({behavior: 'smooth', block:"nearest", inline: "nearest", })
             }
     },[slide])
 
