@@ -22,7 +22,7 @@ overflow: hidden;
 background: white;
 position:sticky;
 top:10vh;
-z-index:999;
+z-index:99;
 
 @media (orientation: landscape) and (min-width: 768px){
 padding-left:15vw;

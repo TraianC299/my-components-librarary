@@ -45,7 +45,7 @@ top: 100%;
 left:0;
 transition: 0.3s ease-in;
 transform-origin: top left;
-z-index:999;
+z-index:98;
 `
 
 const InputLikeButtonStyle= styled(InputLikeButton)`
@@ -96,7 +96,7 @@ border-radius: 5px;
 overflow: hidden;
 box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 background-color: white;
-z-index: 9999;
+z-index: 99;
 `
 const MonthContainer = styled.div`
 background: ${BLACK};

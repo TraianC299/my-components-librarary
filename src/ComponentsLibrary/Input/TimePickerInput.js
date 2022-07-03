@@ -17,7 +17,7 @@ position: absolute;
 top: 105%;
 transition: 0.3s ease-in;
 transform-origin: top left;
-z-index:999;
+z-index:99;
 height: fit-content;
 `
 
