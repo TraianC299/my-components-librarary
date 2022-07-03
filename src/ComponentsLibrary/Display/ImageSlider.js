@@ -72,7 +72,6 @@ const Container = styled.div`
 const Child = styled.div`
 position: relative;
  margin: 0rem;
- border-radius: 10px;
 overflow: hidden;
  scroll-snap-align: center;
  flex: 0 0 80%;

@@ -28,8 +28,9 @@ const Container = styled.div`
     transition: 0.3s ease-in-out;
     position: fixed;
     top: 0;
-    left: 0;
     z-index: 100;
+    left:-100%;
+
     @media ${device.laptopSmall}{
         width: 200px;
         position: static;
@@ -38,8 +39,7 @@ const Container = styled.div`
         }
     }
     &.active-phone-menu{
-           left:-100%;
-
+        left: 0;
         }
 
     >.phone-menu-button{
