@@ -20,6 +20,7 @@ import ImageSliderPage from './Pages/Display/ImageSliderPage';
 import HeroSection from './ComponentsLibrary/Display/HeroSection';
 import BottomMenu from './Pages/Navigation/BottomMenu.tsx';
 import Loading from './ComponentsLibrary/Utilities/Loading';
+import ContactForm from './ComponentsLibrary/E-commerce/ContactForm';
 
 
 
@@ -59,6 +60,7 @@ function App() {
         </Route>
         <Route path="e-commerce">
           <Route path="price-plans" element={<PricePlansPage></PricePlansPage>}></Route>
+          <Route path="contact-form" element={<ContactForm></ContactForm>}></Route>
         </Route>
       </Route>
     </Routes>

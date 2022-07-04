@@ -22,9 +22,7 @@ const TextContainer = styled.div`
     }
 >div{
     color:${DARKBLUE};
- 
-font-size: 1rem;
-
+    font-size: 1rem;
 }
 
 

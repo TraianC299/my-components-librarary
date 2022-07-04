@@ -152,6 +152,7 @@ const Menu = () => {
             <ComponentLink to="/navigation/stepper">Stepper</ComponentLink>
             <ComponentLink to="/navigation/modal">Modal</ComponentLink>
             <ComponentLink to="/navigation/bottom-menu">Bottom Menu</ComponentLink>
+
             </CollapsableContainer>
         </Collapse>
         <Category active={openDisplay} onClick={()=>setOpenDisplay(previous=>!previous)}>Display</Category>
@@ -166,6 +167,7 @@ const Menu = () => {
         <Collapse on={openEcommerce}>
             <CollapsableContainer>
             <ComponentLink to="/e-commerce/price-plans">Price Plans</ComponentLink>
+            <ComponentLink to="/e-commerce/contact-form">Contact Form</ComponentLink>
             </CollapsableContainer>
         </Collapse>
     </Container>
