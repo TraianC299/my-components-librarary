@@ -47,7 +47,6 @@ const Container = styled.div`
         bottom:10px;
         right: 10px;
     }
-    
 `
 
 const CategoryStyle = styled.div`
@@ -130,45 +129,45 @@ const Menu = () => {
         <Category active={openButtons} onClick={()=>setOpenButtons(previous=>!previous)}>Buttons</Category>
         <Collapse on={openButtons}>
             <CollapsableContainer>
-            <ComponentLink to="/buttons/button">Button</ComponentLink>
+                <ComponentLink to="/buttons/button">Button</ComponentLink>
             </CollapsableContainer>
         </Collapse>
         <Category active={openUtilities} onClick={()=>setOpenUtilities(previous=>!previous)}>Utilities</Category>
         <Collapse on={openUtilities}>
             <CollapsableContainer>
-            <ComponentLink to="/utilities/collapse">Collapse</ComponentLink>
-            <ComponentLink to="/utilities/loading">Loading</ComponentLink>
+                <ComponentLink to="/utilities/collapse">Collapse</ComponentLink>
+                <ComponentLink to="/utilities/loading">Loading</ComponentLink>
             </CollapsableContainer>
         </Collapse>
         <Category active={openFeedback} onClick={()=>setOpenFeedback(previous=>!previous)}>Feedback</Category>
         <Collapse on={openFeedback}>
             <CollapsableContainer>
-            <ComponentLink to="/feedback/snackbar">Snackbar</ComponentLink>
+                <ComponentLink to="/feedback/snackbar">Snackbar</ComponentLink>
             </CollapsableContainer>
         </Collapse>
         <Category active={openNavigation} onClick={()=>setOpenNavigation(previous=>!previous)}>Navigation</Category>
         <Collapse on={openNavigation}>
             <CollapsableContainer>
-            <ComponentLink to="/navigation/slider-header">Slider Options</ComponentLink>
-            <ComponentLink to="/navigation/stepper">Stepper</ComponentLink>
-            <ComponentLink to="/navigation/modal">Modal</ComponentLink>
-            <ComponentLink to="/navigation/bottom-menu">Bottom Menu</ComponentLink>
-
+                <ComponentLink to="/navigation/slider-header">Slider Options</ComponentLink>
+                <ComponentLink to="/navigation/stepper">Stepper</ComponentLink>
+                <ComponentLink to="/navigation/modal">Modal</ComponentLink>
+                <ComponentLink to="/navigation/bottom-menu">Bottom Menu</ComponentLink>
+                <ComponentLink to="/navigation/top-navigation">Top Navigation</ComponentLink>
             </CollapsableContainer>
         </Collapse>
         <Category active={openDisplay} onClick={()=>setOpenDisplay(previous=>!previous)}>Display</Category>
         <Collapse on={openDisplay}>
             <CollapsableContainer>
-            <ComponentLink to="/display/image-text">Image Text</ComponentLink>
-            <ComponentLink to="/display/image-slider">Image Slider</ComponentLink>
-            <ComponentLink to="/display/hero-section">Hero Section</ComponentLink>
+                <ComponentLink to="/display/image-text">Image Text</ComponentLink>
+                <ComponentLink to="/display/image-slider">Image Slider</ComponentLink>
+                <ComponentLink to="/display/hero-section">Hero Section</ComponentLink>
             </CollapsableContainer>
         </Collapse>
         <Category active={openEcommerce} onClick={()=>setOpenEcommerce(previous=>!previous)}>E-commerce</Category>
         <Collapse on={openEcommerce}>
             <CollapsableContainer>
-            <ComponentLink to="/e-commerce/price-plans">Price Plans</ComponentLink>
-            <ComponentLink to="/e-commerce/contact-form">Contact Form</ComponentLink>
+                <ComponentLink to="/e-commerce/price-plans">Price Plans</ComponentLink>
+                <ComponentLink to="/e-commerce/contact-form">Contact Form</ComponentLink>
             </CollapsableContainer>
         </Collapse>
     </Container>
