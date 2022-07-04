@@ -23,6 +23,8 @@ import Loading from './ComponentsLibrary/Utilities/Loading';
 import ContactForm from './ComponentsLibrary/E-commerce/ContactForm';
 import TopNavigation from './ComponentsLibrary/Navigation/TopNavigation';
 import TopNavigationPage from './Pages/Navigation/TopNavigationPage';
+import ProductDesignPage from './Pages/Ecommerce/ProductDesignPage';
+import CardPage from './Pages/Display/CardPage';
 
 
 
@@ -60,10 +62,12 @@ function App() {
           <Route path="image-text" element={<ImageTextPage></ImageTextPage>}></Route>
           <Route path="image-slider" element={<ImageSliderPage></ImageSliderPage>}></Route>
           <Route path="hero-section" element={<HeroSection></HeroSection>}></Route>
+          <Route path="card/*" element={<CardPage></CardPage>}></Route>
         </Route>
         <Route path="e-commerce">
           <Route path="price-plans" element={<PricePlansPage></PricePlansPage>}></Route>
           <Route path="contact-form" element={<ContactForm></ContactForm>}></Route>
+          <Route path="product-design/*" element={<ProductDesignPage></ProductDesignPage>}></Route>
         </Route>
       </Route>
     </Routes>

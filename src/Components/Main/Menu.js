@@ -161,6 +161,7 @@ const Menu = () => {
                 <ComponentLink to="/display/image-text">Image Text</ComponentLink>
                 <ComponentLink to="/display/image-slider">Image Slider</ComponentLink>
                 <ComponentLink to="/display/hero-section">Hero Section</ComponentLink>
+                <ComponentLink to="/display/card">Card</ComponentLink>
             </CollapsableContainer>
         </Collapse>
         <Category active={openEcommerce} onClick={()=>setOpenEcommerce(previous=>!previous)}>E-commerce</Category>
@@ -168,6 +169,7 @@ const Menu = () => {
             <CollapsableContainer>
                 <ComponentLink to="/e-commerce/price-plans">Price Plans</ComponentLink>
                 <ComponentLink to="/e-commerce/contact-form">Contact Form</ComponentLink>
+                <ComponentLink to="/e-commerce/product-design">Product Design</ComponentLink>
             </CollapsableContainer>
         </Collapse>
     </Container>

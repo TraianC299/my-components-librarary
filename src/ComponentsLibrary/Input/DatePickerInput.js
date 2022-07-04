@@ -91,7 +91,7 @@ export default DatePickerInput
 
 const CalendarContainer = styled.div`
 background: white;
-width: fit-content;
+width: 300px;
 border-radius: 5px;
 overflow: hidden;
 box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
@@ -126,8 +126,8 @@ grid-template-columns: repeat(7, 1fr);
 grid-template-rows: repeat(6, 1fr);
 flex-grow: 1;
 grid-gap: 10px;
-height: 34.13vh;
-width: 40vh;
+height: 260px;
+width: 300px;
 padding: 10px;
 background-color: white;
 `
