@@ -59,6 +59,7 @@ const CategoryStyle = styled.div`
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    margin-bottom: 5px;
     
 
     >svg{
