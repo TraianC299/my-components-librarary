@@ -8,8 +8,8 @@ import Button from '../Buttons/Button'
 
 const Container = styled.div`
 height: fit-content;
-width: 100%;
-margin:auto;
+max-width: 1000px;
+width:100%;
 
 @media ${device.laptopSmall}{
     display: grid;

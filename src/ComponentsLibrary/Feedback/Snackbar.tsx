@@ -13,7 +13,7 @@ const Container = styled.div<StyledComponent>`
     align-items: center;
     justify-content: center;
     transition: 0.3s;
-    z-index: 2;
+    z-index: 10222;
     border-radius: 10px;
     text-align: left;
     transform: translateY(${props=>props.open?"0%":"10vh"});
