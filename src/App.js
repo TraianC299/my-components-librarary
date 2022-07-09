@@ -28,6 +28,7 @@ import SideMenu from './Pages/Navigation/SideMenu.tsx';
 
 import ProductDesignPage from './Pages/Ecommerce/ProductDesignPage';
 import CardPage from './Pages/Display/CardPage';
+import AccordionPage from './Pages/Display/AccordionPage';
 
 
 
@@ -67,6 +68,7 @@ function App() {
           <Route path="image-slider" element={<ImageSliderPage></ImageSliderPage>}></Route>
           <Route path="hero-section" element={<HeroSection></HeroSection>}></Route>
           <Route path="card/*" element={<CardPage></CardPage>}></Route>
+          <Route path="accordion" element={<AccordionPage></AccordionPage>}></Route>
         </Route>
         <Route path="e-commerce">
           <Route path="price-plans" element={<PricePlansPage></PricePlansPage>}></Route>

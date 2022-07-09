@@ -3,13 +3,10 @@ import styled from 'styled-components'
 import { BLUE, device, WHITE } from '../../Constants'
 // import {  Button, device, BLUE, shadow600, WHITE } from '../../styles/styles'
 // import useMediaQuery from '../../Hooks/useMediaQuery'
-import useMediaQuery from '../../Hooks/useMediaQuery.ts'
 import Button from '../Buttons/Button'
 
 
-const chevronDown = <svg width="50" height="30" viewBox="0 0 50 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M2.67277 0.0860088C1.66075 0.33693 0.742724 1.14424 0.283663 2.18704C0.0528127 2.71152 0.0122182 2.9363 0.0142724 3.67939C0.018772 5.3252 -0.920184 4.21365 11.6802 17.4901C19.2797 25.4973 23.0268 29.376 23.3302 29.5491C24.0387 29.9533 24.8754 30.0953 25.6115 29.9363C25.9478 29.8636 26.4242 29.6894 26.6701 29.5491C26.9735 29.376 30.7207 25.4973 38.3201 17.4901C50.9216 4.21252 49.9823 5.32448 49.9852 3.67939C49.9864 2.93435 49.9453 2.70936 49.708 2.16295C48.8869 0.272502 46.6988 -0.527194 44.9061 0.408048C44.6513 0.540919 41.1117 4.18885 34.7575 10.8671L25.0002 21.1221L15.2428 10.8671C8.86378 4.16271 5.34996 0.541743 5.09416 0.408769C4.34957 0.0217863 3.42724 -0.101101 2.67277 0.0860088Z" fill="black"/>
-</svg>
+
 const heroSvg  =<svg id="hero-svg" width="388" height="344" viewBox="0 0 388 344" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M66.8801 11.3202C85.8801 -1.00978 111.88 -3.38978 132.09 7.32022C193.73 39.9902 163.67 132.19 222.09 167.6C247.81 183.19 282.69 173.23 310.96 178.71C326.51 181.71 341.36 191.98 346.47 207.48C358.08 242.69 329.56 273.32 302.15 290.9C227.76 338.6 124.38 310.45 69.9601 245.53C63.3779 237.704 57.4607 229.341 52.2701 220.53C32.8901 187.53 24.9601 148.53 26.5901 110.53C28.0701 75.4102 35.0001 32.0002 66.8801 11.3202Z" fill="#407BFF"/>
 <path opacity="0.9" d="M66.8801 11.3202C85.8801 -1.00978 111.88 -3.38978 132.09 7.32022C193.73 39.9902 163.67 132.19 222.09 167.6C247.81 183.19 282.69 173.23 310.96 178.71C326.51 181.71 341.36 191.98 346.47 207.48C358.08 242.69 329.56 273.32 302.15 290.9C227.76 338.6 124.38 310.45 69.9601 245.53C63.3779 237.704 57.4607 229.341 52.2701 220.53C32.8901 187.53 24.9601 148.53 26.5901 110.53C28.0701 75.4102 35.0001 32.0002 66.8801 11.3202Z" fill="white"/>
@@ -225,17 +222,7 @@ const wavePhoneSvg=  <svg width="390" height="260" viewBox="0 0 390 260" fill="n
 
 
 
- const ExploreButton = styled(Button)`
- position: relative;
- background: transparent;
- border: 2px solid white;
-    >svg{
-        position: absolute;
-        transform: translateY(100%);
-        top: 0;
-        right: 10%;
-    }
- `
+
 
  const HeroStyle  =styled.div`
  background-color: ${BLUE};
@@ -275,14 +262,16 @@ text-overflow: ellipsis;
      height: 25vh;
      z-index: 2;
  }
+ @media ${device.mobileSmallPortrait}{
+    height: 100vh;
+
+    h1{
+        font-size: 2.5rem;
+    }
+ }
  @media ${device.mobileLargePortrait}{
     h1{
         font-size: 3rem;
-    }
- }
- @media ${device.mobileSmallPortrait}{
-    h1{
-        font-size: 2.5rem;
     }
  }
  @media ${device.laptopSmall}{

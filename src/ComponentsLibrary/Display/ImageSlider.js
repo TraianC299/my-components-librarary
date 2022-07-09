@@ -74,7 +74,7 @@ position: relative;
  margin: 0rem;
 overflow: hidden;
  scroll-snap-align: center;
- flex: 0 0 80%;
+ flex: 0 0 100%;
  box-shadow: 2px 2px 10px rgba(19, 21, 19, 0.25);
  background-color: white;
  transition: all 0.1s ease-in-out;
