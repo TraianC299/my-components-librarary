@@ -21,8 +21,11 @@ import HeroSection from './ComponentsLibrary/Display/HeroSection';
 import BottomMenu from './Pages/Navigation/BottomMenu.tsx';
 import Loading from './ComponentsLibrary/Utilities/Loading';
 import ContactForm from './ComponentsLibrary/E-commerce/ContactForm';
-import TopNavigation from './ComponentsLibrary/Navigation/TopNavigation';
-import TopNavigationPage from './Pages/Navigation/TopNavigationPage';
+
+import TabsNavigationPage from './Pages/Navigation/TabsNavigationPage';
+import SideMenu from './Pages/Navigation/SideMenu.tsx';
+
+
 import ProductDesignPage from './Pages/Ecommerce/ProductDesignPage';
 import CardPage from './Pages/Display/CardPage';
 
@@ -56,7 +59,8 @@ function App() {
           <Route path="stepper" element={<StepperPage></StepperPage>}></Route>
           <Route path="modal" element={<ModalPage></ModalPage>}></Route>
           <Route path="bottom-menu" element={<BottomMenu></BottomMenu>}></Route>
-          <Route path="top-navigation" element={<TopNavigationPage></TopNavigationPage>}></Route>
+          <Route path="top-navigation/*" element={<TabsNavigationPage></TabsNavigationPage>}></Route>
+          <Route path="side-menu" element={<SideMenu></SideMenu>}></Route>
         </Route>
         <Route path="display">
           <Route path="image-text" element={<ImageTextPage></ImageTextPage>}></Route>

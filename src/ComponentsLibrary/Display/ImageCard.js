@@ -1,14 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
-import { DARKBLUE, GREY } from '../../Constants'
+import { borderStyle, DARKBLUE, GREY } from '../../Constants'
 
 const Container = styled.div`
 max-width: 350px;
 width:100%;
 border-radius:10px;
 overflow: hidden;
-box-shadow: 0px 8px 18px -6px rgba(24, 39, 75, 0.12), 0px 12px 42px -4px rgba(0, 0, 0, 0.12);
->img{
+border: ${borderStyle};
+transition: 0.3s ease-in-out;
+cursor:pointer;
+:hover{
+    box-shadow: 0px 8px 18px -6px rgba(24, 39, 75, 0.12), 0px 12px 42px -4px rgba(0, 0, 0, 0.12);
+}>img{
     width: 100%;
 }`
 
@@ -28,7 +32,7 @@ padding:20px;
 >p{
     color: #8c8c8c;
 }`
-const Card = ({image}) => {
+const ImageCard = ({image}) => {
   return (
     <Container>
         <img src={image}></img>
@@ -41,4 +45,4 @@ const Card = ({image}) => {
   )
 }
 
-export default Card
+export default ImageCard

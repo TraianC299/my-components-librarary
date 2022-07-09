@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet, Route, Routes } from 'react-router-dom'
-import TopNavigation from '../../ComponentsLibrary/Navigation/TopNavigation'
+import TabsNavigation from '../../ComponentsLibrary/Navigation/TabsNavigation.tsx'
 import CommoStoreProduct from './ProductDesignVersions/CommoStoreProduct'
 
 const ProductDesignPage = () => {
@@ -26,9 +26,9 @@ const ProductDesignPage = () => {
 const BaseComponent = () => {
     return(
         <div className='full'>
-            <TopNavigation nav={[
+            <TabsNavigation nav={[
                 {name:"Commo Store", to:"commo-store"},
-            ]}></TopNavigation>
+            ]}></TabsNavigation>
             <Outlet></Outlet>
         </div>
     )

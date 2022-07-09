@@ -5,6 +5,7 @@ export const BLACK = "#000000"
 export const GREY  = "#C4C4C4"
 export const RED  = "#FF5252"
 export const LIGHTGREY = "#F5F5F5"
+export const borderStyle = "1px solid #dee3ea"
 export const device = {
     mobileSmallPortrait: `(min-width: 300px) and (orientation: portrait)`,
     mobileLargePortrait: `(min-width: 370px) and (orientation: portrait)`,

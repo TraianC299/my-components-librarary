@@ -1,17 +1,17 @@
 import React from 'react'
 import { Outlet, Route, Routes } from 'react-router-dom'
-import Card from '../../ComponentsLibrary/Display/Card'
+import Card from '../../ComponentsLibrary/Display/ImageCard'
 import IconCard from '../../ComponentsLibrary/Display/IconCard'
-import TopNavigation from '../../ComponentsLibrary/Navigation/TopNavigation'
+import TabsNavigation from '../../ComponentsLibrary/Navigation/TabsNavigation.tsx'
 
 const CardPage = () => {
   return (
     <Routes>
         <Route path="" element={<div className='full'>
-            <TopNavigation nav={[
+            <TabsNavigation nav={[
                 {name:"Image Card", to:""},
                 {name:"Icon Card", to:"icon"},
-            ]}></TopNavigation>
+            ]}></TabsNavigation>
             <div className='flex justify-center items-center full'><Outlet></Outlet></div>
         </div>}>
             <Route index element={<Card text="We’ll prepare your legal documents, file your paperwork, and create all the essential post-incorporation documents. Manage all your documentation in one easily accessible dashboard." header="This is a title" image="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"></Card>}></Route>

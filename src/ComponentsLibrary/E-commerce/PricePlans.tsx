@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { BLUE, DARKBLUE, device, WHITE } from '../../Constants'
+import { BLUE, device, WHITE } from '../../Constants'
 import Button from '../Buttons/Button'
 
 

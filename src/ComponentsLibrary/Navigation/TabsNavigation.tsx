@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import {  NavLink, useLocation } from 'react-router-dom'
 import styled from 'styled-components'
 import { device, BLUE, GREY } from '../../Constants'
 
@@ -17,7 +17,7 @@ top:0;
 border-bottom: 2px solid transparent;`
 
 
-const Item = styled(Link)`
+const Item = styled(NavLink)`
 height: 8vh;
 text-decoration: none;
 color: black;
@@ -27,7 +27,11 @@ display: flex;
 align-items: center;
 justify-content: center;
 cursor: pointer;
+color: ${GREY};
 
+&.active{
+  color: ${BLUE};
+}
 @media ${device.mobileSmallPortrait}{
   width: 33vw;
 
@@ -45,16 +49,39 @@ background: ${BLUE};
 
 @media ${device.mobileSmallPortrait}{
   width: 33vw;
-
 }`
-const TopNavigation = ({nav}) => {
+
+interface NavItem {
+  name: string; to: string
+};
+
+interface NavItemsArray extends Array<NavItem>{}
+
+interface Props {
+  readonly nav: NavItemsArray;
+}
+const TabsNavigation:React.FC<Props> = ({nav}) => {
+  let location = useLocation();
     const [selected, setSelected] = useState(0)
+
+
+
+    useEffect(()=>{
+        let index = nav.findIndex(item => item.to === location.pathname.split("/").pop())
+        setSelected(index)
+    },[location])
+
+    
   return (
     <Container>
         <Span style={{transform: `translateX(${selected*100}%)`}}></Span>
-        {nav&&nav.map((item, index) => <Item to={item.to} style={{color: selected==index?BLUE:GREY}} onClick={()=>setSelected(index)} key={index}>{item.name}</Item>)}
+        {nav&&nav.map((item, index) => <Item 
+            to={item.to} 
+            onClick={({})=>setSelected(index)} 
+            key={index}
+            >{item.name}</Item>)}
     </Container>
   )
 }
 
-export default TopNavigation
+export default TabsNavigation

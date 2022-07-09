@@ -153,6 +153,7 @@ const Menu = () => {
                 <ComponentLink to="/navigation/modal">Modal</ComponentLink>
                 <ComponentLink to="/navigation/bottom-menu">Bottom Menu</ComponentLink>
                 <ComponentLink to="/navigation/top-navigation">Top Navigation</ComponentLink>
+                <ComponentLink to="/navigation/side-menu">Side Menu</ComponentLink>
             </CollapsableContainer>
         </Collapse>
         <Category active={openDisplay} onClick={()=>setOpenDisplay(previous=>!previous)}>Display</Category>
