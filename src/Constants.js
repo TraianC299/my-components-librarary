@@ -7,6 +7,8 @@ export const DARKGREY = "#3E4958"
 export const RED  = "#FF5252"
 export const LIGHTGREY = "#F5F5F5"
 export const borderStyle = "1px solid #dee3ea"
+export const shadowStyle =   "0px 8px 18px -6px rgba(24, 39, 75, 0.12), 0px 12px 42px -4px rgba(0, 0, 0, 0.12)"
+export const transitionStyle = "0.3s ease-in-out"
 export const device = {
     mobileSmallPortrait: `(min-width: 300px) and (orientation: portrait)`,
     mobileLargePortrait: `(min-width: 370px) and (orientation: portrait)`,

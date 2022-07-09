@@ -1,18 +1,25 @@
 import React, {  useState } from 'react'
 import  styled from "styled-components"
-import { DARKBLUE, DARKGREY, LIGHTGREY } from '../../Constants'
+import { borderStyle, DARKBLUE, DARKGREY, LIGHTGREY, shadowStyle, transitionStyle } from '../../Constants'
 import Collapse from '../Utilities/Collapse'
 
 const FAQInstanceContainer = styled.div`
     display: flex;
     flex-direction: column;
     max-width:500px;
-    box-shadow: 0px 8px 18px -6px rgba(24, 39, 75, 0.12), 0px 12px 42px -4px rgba(0, 0, 0, 0.12);
     justify-content: space-between;
     align-items: center;
     width: 100%;
     border-bottom: 1px solid ${LIGHTGREY};
+    border-radius: 10px;
+    border: ${borderStyle};
+    transition:${transitionStyle};
 
+
+    :hover{
+        box-shadow: ${shadowStyle};
+
+    }
     >div:first-child{
         width: 100%;
         display: flex;

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { borderStyle, DARKBLUE, GREY } from '../../Constants'
+import { borderStyle, DARKBLUE, GREY, shadowStyle } from '../../Constants'
 
 const Container = styled.div`
 max-width: 350px;
@@ -14,7 +14,7 @@ border: ${borderStyle};
 transition: 0.3s ease-in-out;
 cursor:pointer;
 :hover{
-    box-shadow: 0px 8px 18px -6px rgba(24, 39, 75, 0.12), 0px 12px 42px -4px rgba(0, 0, 0, 0.12);
+    box-shadow: ${shadowStyle};
 }
 >h3{
     font-weight:600;
