@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-import {  LIGHTGREY } from '../../Constants'
+import {  LIGHTGREY, shadowStyle } from '../../Constants'
 import CircleButton from '../Buttons/CircleButton'
 import OutsideClick from '../Utilities/OutsideClick'
 import Input from "./Input"
@@ -32,7 +32,7 @@ height: fit-content;
 position: absolute;
 top:105%;
 mix-blend-mode: normal;
-filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+box-shadow:${shadowStyle};
 max-height: 25vh;
 overflow: scroll;
 background-color: transparent;

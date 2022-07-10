@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
-import { BLUE, DARKBLUE, LIGHTGREY, RED } from '../../Constants';
+import { BLUE, borderStyle, DARKBLUE, LIGHTGREY, RED } from '../../Constants';
 
 
 const Container = styled.div`
@@ -27,7 +27,7 @@ const InputContainer = styled.input`
   align-items: center;
   justify-content: flex-start;
   padding: 10px;
-  border: 0.5px solid ${DARKBLUE};
+  border: ${borderStyle};
   ::placeholder{
     opacity: 0;
   }
@@ -123,7 +123,7 @@ const onBlur = (e) => {
   return(
     <Container >
       <InputContainer
-      className={error?"error":className}
+      className={error?"error "+className:className}
       {...props}
       onChange={(e)=>handleChange(e)}
       onBlur={(e)=>onBlur(e)}

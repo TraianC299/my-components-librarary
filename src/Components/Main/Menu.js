@@ -145,13 +145,11 @@ const Menu = () => {
         <Container className={openPhoneMenu?'active-phone-menu':"closed-phone-menu"}>
             <CircleButton color={BLUE} icon={openPhoneMenu?closeSvg:openSvg} onClick={()=>setOpenPhoneMenu(previous=>!previous)} className="phone-menu-button"  style={{height:"6vh", width:"6vh"}}></CircleButton>
             <Category  active={openInput} onClick={()=>setOpenInput(previous=>!previous)}>
-                Inputs
+                Input
                 </Category>
             <Collapse on={openInput}>
                 <CollapsableContainer>
-                    <ComponentLink style={({ isActive }) =>
-                  isActive ? activeStyle : undefined
-                }to="/input/option-selector">Option Selector</ComponentLink>
+                    <ComponentLink to="/input/option-selector">Option Selector</ComponentLink>
                     <ComponentLink to="/input/input">Input</ComponentLink>
                     <ComponentLink to="/input/time-picker">Time Picker</ComponentLink>
                     <ComponentLink to="/input/date-picker">Date Picker</ComponentLink>
